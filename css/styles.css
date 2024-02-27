@@ -24,30 +24,63 @@ p{
 :root{
     --accent: #ff6600;
     --font-white: #ffffff;
+    --dark:#1e1e1e;
 }
 .navbar{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: #00acb6;
+    background-color: var(--dark);
     text-decoration: none;
     z-index: 1;
 
     align-items: baseline;
     position: sticky;
 	top: 0;
+    padding: 1px 30px 8px ;
 }
 .navbar ul{
     list-style: none;
     gap: 40px;
-    background-color: beige;
     li{
-        background-color: rgb(199, 160, 214);
+        font-family: "Noto Sans Mono", monospace;
+        a{
+            color: var(--font-white);
+        }
+
     }
 }
 #search-button{
-    
-    
+    background: none;
+    padding: 6px 40px;
+    border-radius: 7px;
+    border-radius: 0px 7px 7px 0px;
+    margin-left: -0px;
+    border-left: none;
+    border: solid 2px var(--font-white);
+    cursor: pointer;
+    color: var(--font-white);
+    font-family: "Noto Sans Mono", monospace;
+    font-size: 17px;
+
 }
+.search-bar{
+    padding: 10px;
+    
+    border-radius: 7px 0px 0px 7px;
+    border-right: none;
+    border: solid 2px var(--font-white);
+    width: 30vw;
+    resize: horizontal; 
+    overflow: auto; 
+}
+.item-grid-nav-1{
+    padding-right: 30px;
+}
+.item-grid-nav-2{
+    justify-content: flex-end;
+}
+
+
 .button-style{
     background: none;
     padding: 15px 50px;
@@ -57,10 +90,10 @@ p{
     border: solid 2px var(--font-white);
     color: var(--font-white);
     box-shadow: 10px 11px 0px var(--accent);
+    cursor: pointer
 
 
 }
-
 header{
     background-color: rgb(166, 210, 251);
     padding-top: 20px;
@@ -113,8 +146,6 @@ header{
     height: 380px;
     z-index: 0;
 }
-
-
 .content-grid{
 
     background-color: #727272;
@@ -148,7 +179,6 @@ header{
     grid-column: 1/ 3 ;
     grid-row: 1/3;
 }
-
 .item-2{
     grid-column: 3/4 ;
     grid-row: 1/5;
