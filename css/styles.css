@@ -12,6 +12,7 @@ h1{
     grid-template-columns: 1fr 1fr;
     background-color: #00acb6;
     text-decoration: none;
+    z-index: 1;
 
 
 
