@@ -17,10 +17,13 @@ h1{
     text-transform: uppercase;
     letter-spacing: 2px;
     word-spacing: -6px;
-    
 }
 p{
     text-wrap: balance;
+}
+:root{
+    --accent: #ff6600;
+    --font-white: #ffffff;
 }
 .navbar{
     display: grid;
@@ -41,22 +44,38 @@ p{
         background-color: rgb(199, 160, 214);
     }
 }
+#search-button{
+    
+    
+}
+.button-style{
+    background: none;
+    padding: 15px 50px;
+    border-radius: 10px;
+    font-family: "Noto Sans Mono", monospace;
+    font-size: 17px;
+    border: solid 2px var(--font-white);
+    color: var(--font-white);
+    box-shadow: 10px 11px 0px var(--accent);
+
+
+}
 
 header{
     background-color: rgb(166, 210, 251);
-    padding-top: 130px;
+    padding-top: 20px;
     padding-bottom: 60px;
     background-image: url(/img/bg-hero.webp);
     background-attachment: fixed;
     background-size: cover;
     p{
         font-family: "Noto Sans Mono", monospace;
-        color: #ffffff;
+        color: var(--font-white);
         line-height: 150%;
     }
     h3{
         font-family: "Noto Sans Mono", monospace;
-        color: #ffffff;
+        color: var(--font-white);
         line-height: 110%;
         font-size: 37px;
         word-spacing: -10px;
@@ -69,18 +88,29 @@ header{
     width: 480px;    
     margin-left: 80px;
     z-index: 1;
+    hr{
+        padding-top: 15px;
+        margin-top: -20px;
+        width: 440px;
+        margin-left: 0px;
+        background-color: var(--accent);
+        border: none;
+    }
 }
 .effect{
-    position: absolute;
-    margin-top: -300px;
-    margin-left: 40px;
-    width: 550px;
-    height: 340px;
     border-radius: 20px;
     backdrop-filter: blur(10px);
     background-color: #ffffff13;
     box-shadow: 5px 10px 35px #00000068 ,
                 inset 0 0 100px rgba(255, 34, 0, 0.333);
+
+}
+.fx-form{
+    position: absolute;
+    margin-top: -340px;
+    margin-left: 40px;
+    width: 560px;
+    height: 380px;
     z-index: 0;
 }
 
