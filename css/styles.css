@@ -18,8 +18,17 @@ h1{
     letter-spacing: 2px;
     word-spacing: -6px;
 }
+h3{
+    font-family: "Rubik Mono One", monospace;
+}
 p{
     text-wrap: balance;
+    font-family: "Noto Sans Mono", monospace;
+    font-size: 16px;
+}
+blockquote{
+    font-family: "Rubik Mono One", monospace;
+    font-size: 15px;
 }
 a{
     text-decoration: none;
@@ -120,7 +129,7 @@ header{
 }
 .hero-cta{
     position: relative;
-    width: 480px;    
+    width: 580px;    
     margin-left: 80px;
     z-index: 1;
     hr{
@@ -142,10 +151,10 @@ header{
 }
 .fx-form{
     position: absolute;
-    margin-top: -340px;
+    margin-top: -285px;
     margin-left: 40px;
-    width: 560px;
-    height: 380px;
+    width: 660px;
+    height: 325px;
     z-index: 0;
 }
 .content-grid{
@@ -155,31 +164,83 @@ header{
 
     padding: 30px;
     background: var(--grey);
-
     margin-left: auto;
     margin-right: auto;
     display: grid;
-    /*outline: solid #333;*/
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 120px 120px 280px 180px;
     gap: 10px;
+}
 
-    .card{
+.card{
+    border-radius: 17px;
+    background-color: var(--dark);
+    color: aliceblue;
 
-        border-radius: 17px;
-        background-color: var(--dark);
-        color: aliceblue;
-        text-align: center;
-        font-size: 30px;
-        
+    font-size: 30px;
+    h3{
+        font-size: 1.5vw;
+        margin: 0px;
     }
-    div:hover{
-        cursor: pointer;
+    h2{
+        text-align: center;
+    }
+    p{
+        font-size: 0.8vw;
+    }
+    blockquote{
+        margin: 0px;
+        font-size: 1vw;
+    }
+    
+}
+.pers-card{
+    border:solid 1px #ff6600;
+    border-radius: 50px;
+    display: flex;
+    align-items: start;
+    box-shadow: 2px 10px 30px -15px var(--accent);
+
+    background: 
+    linear-gradient(20deg, var(--dark), #86180023), 
+    url(https://grainy-gradients.vercel.app/noise.svg); 
+    
+    margin-top: 20px;
+    padding: 0px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+    img{
+        width: 100%;
+        height: 100%;
+        margin-top: 0px;
+        margin-left: -5px;
+        margin-right: -5px;
+        border-radius: 50px;
+        scale: 0.8;
+
+
     }
 }
+.text-block{
+    text-align: left;
+    margin-right: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .item-1{
     grid-column: 1/ 3 ;
     grid-row: 1/3;
+    h2{
+        text-transform: uppercase;
+        font-size: 5.5vw;
+        word-spacing: -15px;
+        line-height: 90%;
+        margin-top: 35px;
+        font-family: "Noto Sans Mono", monospace;
+    }
 }
 .item-2{
     grid-column: 3/4 ;
@@ -188,8 +249,8 @@ header{
 .item-3{
     grid-column: 1/3 ;
     grid-row:  3/4;
-    display: flex; /* Flex-Container */
-    align-items: flex-end; /* Inhalt am unteren Rand ausrichten */
+    display: flex; 
+    align-items: flex-end; 
     
     img{
 
