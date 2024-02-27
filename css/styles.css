@@ -25,6 +25,7 @@ p{
     --accent: #ff6600;
     --font-white: #ffffff;
     --dark:#1e1e1e;
+    --grey: #7b7b7b;
 }
 .navbar{
     display: grid;
@@ -79,8 +80,6 @@ p{
 .item-grid-nav-2{
     justify-content: flex-end;
 }
-
-
 .button-style{
     background: none;
     padding: 15px 50px;
@@ -147,25 +146,25 @@ header{
     z-index: 0;
 }
 .content-grid{
-
-    background-color: #727272;
+    background-color: var(--grey);
 }
 .grid-container{
-    padding-top: 60px;
-    width: 900px;
+
+    padding: 30px;
+    background: var(--grey);
 
     margin-left: auto;
     margin-right: auto;
     display: grid;
     /*outline: solid #333;*/
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 180px 120px 180px 180px;
-    gap: 20px;
+    grid-template-rows: 120px 120px 280px 180px;
+    gap: 10px;
 
     .card{
-        outline: solid 3px #009e6f;
-        border-radius: 15px;
-        background-color: #333;
+        outline: solid 1px var(--accent);
+        border-radius: 17px;
+        background-color: var(--dark);
         color: aliceblue;
         text-align: center;
         font-size: 30px;
@@ -184,13 +183,13 @@ header{
     grid-row: 1/5;
 }
 .item-3{
-    grid-column: 2/1 ;
+    grid-column: 1/3 ;
     grid-row:  3/5;
 
 }
 .item-4{
+    grid-column: 4/5;
     grid-row: 3/4 ;
-    grid-column: 2/3;
 }
 .item-5{
     grid-column: 2/2;
