@@ -111,6 +111,7 @@ header{
     background-image: url(/img/bg-hero.webp);
     background-attachment: fixed;
     background-size: cover;
+    position: 0;
 
     p{
         font-family: "Noto Sans Mono", monospace;
